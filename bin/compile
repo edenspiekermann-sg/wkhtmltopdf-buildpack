@@ -33,7 +33,8 @@ chmod +x $WKHTMLTOPDF_BINARIES/*
 
 echo "-----> Moving binaries to the right place"
 mv $WKHTMLTOPDF_BINARIES/* $BIN_PATH/
-echo $BIN_PATH
+ls $BIN_PATH
+PATH: $PATH:$BIN_PATH/wkhtmltopdf
 echo "---> binaries"
 echo $WKHTMLTOPDF_BINARIES
 
