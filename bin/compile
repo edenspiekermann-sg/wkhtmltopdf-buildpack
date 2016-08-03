@@ -36,6 +36,9 @@ mv $WKHTMLTOPDF_BINARIES/* $BIN_PATH/
 ls $BIN_PATH
 PATH=$PATH:$BIN_PATH/wkhtmltopdf
 echo "---> binaries"
+export PATH
+echo $BIN_PATH
+ls $BIN_PATH
 echo $WKHTMLTOPDF_BINARIES
 
 echo "-----> Cleaning up"
