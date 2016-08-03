@@ -42,3 +42,5 @@ mkdir -p $1/.fonts
 ls $FONTS_DIR
 cp $FONTS_DIR/* $1/.fonts/
 fc-cache -f $1/.fonts
+
+export PATH="/app/bin:$PATH"
