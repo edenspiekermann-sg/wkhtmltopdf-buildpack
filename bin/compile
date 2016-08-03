@@ -32,13 +32,13 @@ echo "-----> Setting permissions"
 chmod +x $WKHTMLTOPDF_BINARIES/*
 
 echo "-----> Moving binaries to the right place"
-mv $WKHTMLTOPDF_BINARIES/* BIN_DIR/
+mv $WKHTMLTOPDF_BINARIES/* $BIN_DIR/
 ls BIN_DIR
-PATH=$PATH:BIN_DIR/wkhtmltopdf
+PATH=$PATH:$BIN_DIR/wkhtmltopdf
 echo "---> binaries"
 export PATH
-echo BIN_DIR
-ls BIN_DIR
+echo $BIN_DIR
+ls $BIN_DIR
 echo $WKHTMLTOPDF_BINARIES
 
 echo "-----> Cleaning up"
